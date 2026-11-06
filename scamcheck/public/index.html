@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ScamCheck – Stop and think before you click</title>
+  <meta name="description" content="Check a suspicious message for scam warning signs and learn how to spot them yourself.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#main" data-i18n="skip">Skip to main content</a>
+  <header>
+    <div class="wrap bar">
+      <div class="brand"><span aria-hidden="true">🛡️</span> ScamCheck</div>
+      <nav aria-label="Main">
+        <button class="tab active" data-view="check" data-i18n="navCheck">Check a message</button>
+        <button class="tab" data-view="learn" data-i18n="navLearn">Learn</button>
+      </nav>
+      <div class="tools">
+        <button id="langBtn" class="small" aria-label="Switch language">العربية</button>
+        <button id="textSize" class="small" aria-label="Larger text">A+</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" class="wrap">
+    <!-- CHECK VIEW -->
+    <section id="view-check">
+      <h1 data-i18n="heroTitle">Got a strange message? Pause first.</h1>
+      <p class="lead" data-i18n="heroLead">Show us the message. We'll point out warning signs and explain them in plain words.</p>
+
+      <div id="input-card" class="card">
+        <div class="modes" role="tablist">
+          <button class="mode active" data-mode="image" role="tab" data-i18n="modeImage">📷 Upload screenshot</button>
+          <button class="mode" data-mode="text" role="tab" data-i18n="modeText">📝 Paste text</button>
+          <button class="mode" data-mode="link" role="tab" data-i18n="modeLink">🔗 Enter a link</button>
+        </div>
+
+        <div class="panel" data-panel="image">
+          <label class="drop" id="drop" for="file">
+            <span class="big" aria-hidden="true">📷</span>
+            <span data-i18n="dropText">Tap here to choose a screenshot or photo</span>
+            <span class="hint" data-i18n="dropHint">You can also drag a picture onto this box</span>
+          </label>
+          <input type="file" id="file" accept="image/*" hidden>
+          <div id="preview" hidden>
+            <img id="previewImg" alt="Your selected screenshot">
+            <button id="removeImg" class="small" data-i18n="remove">Remove</button>
+          </div>
+        </div>
+
+        <div class="panel" data-panel="text" hidden>
+          <label for="textIn" class="sr" data-i18n="modeText">Paste text</label>
+          <textarea id="textIn" rows="7" maxlength="6000" data-i18n-ph="textPh" placeholder="Paste the message here"></textarea>
+        </div>
+
+        <div class="panel" data-panel="link" hidden>
+          <label for="linkIn" class="sr" data-i18n="modeLink">Enter a link</label>
+          <input type="text" id="linkIn" inputmode="url" autocomplete="off" data-i18n-ph="linkPh" placeholder="Paste the link here (do not open it)">
+          <p class="hint" data-i18n="linkHint">We never open the link. We only look at the address itself.</p>
+        </div>
+
+        <button id="checkBtn" class="primary" data-i18n="checkBtn">Check this message</button>
+        <p class="privacy" data-i18n="privacy">🔒 Privacy: your message is sent to an AI service only to be analysed. We do not save it, and nothing is stored on our side.</p>
+      </div>
+
+      <div id="loading" class="card center" hidden aria-live="polite">
+        <div class="spinner" aria-hidden="true"></div>
+        <p data-i18n="loading">Looking carefully… this can take a few seconds.</p>
+      </div>
+
+      <div id="error" class="card error" role="alert" hidden></div>
+
+      <div id="result" hidden></div>
+    </section>
+
+    <!-- LEARN VIEW -->
+    <section id="view-learn" hidden>
+      <h1 data-i18n="learnTitle">Learn to spot scams</h1>
+      <p class="lead" data-i18n="learnLead">Scammers use the same tricks again and again. Once you know them, they are easier to notice.</p>
+      <div id="lessons"></div>
+      <h2 data-i18n="quizTitle">Practice quiz</h2>
+      <p class="lead" data-i18n="quizLead">Read each message. Would you trust it?</p>
+      <div id="quiz"></div>
+    </section>
+  </main>
+
+  <footer class="wrap">
+    <p data-i18n="disclaimer">ScamCheck is a helper, not a judge. AI can make mistakes. If you are unsure, check with the organisation using its official website, app or phone number, or ask someone you trust.</p>
+  </footer>
+
+  <script src="config.js"></script>
+  <script src="i18n.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

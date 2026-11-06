@@ -1,0 +1,82 @@
+window.I18N = {
+en: {
+  skip:"Skip to main content", navCheck:"Check a message", navLearn:"Learn",
+  heroTitle:"Got a strange message? Pause first.",
+  heroLead:"Show us the message. We'll point out warning signs and explain them in plain words.",
+  modeImage:"📷 Upload screenshot", modeText:"📝 Paste text", modeLink:"🔗 Enter a link",
+  dropText:"Tap here to choose a screenshot or photo", dropHint:"You can also drag a picture onto this box",
+  remove:"Remove", textPh:"Paste the message here", linkPh:"Paste the link here (do not open it)",
+  linkHint:"We never open the link. We only look at the address itself.",
+  checkBtn:"Check this message",
+  privacy:"🔒 Privacy: your message is sent to an AI service only to be analysed. We do not save it, and nothing is stored on our side.",
+  loading:"Looking carefully… this can take a few seconds.",
+  needInput:"Please add a screenshot, some text, or a link first.",
+  netError:"We couldn't check this right now. Please try again in a moment.",
+  risk_low:"Low Concern", risk_suspicious:"Suspicious", risk_high:"High Risk",
+  whyBtn:"Why was this flagged?", hideWhy:"Hide the details",
+  stepsTitle:"What you can do now", noSigns:"We did not find clear warning signs. Still, if the message asks for money, codes or passwords, stop and verify first.",
+  signsTitle:"Warning signs we noticed", goodTitle:"Things that look normal",
+  yourMsg:"Your message, with warning signs highlighted",
+  readAloud:"🔊 Read aloud", stopRead:"⏹ Stop", again:"Check another message", learnMore:"Learn about scams",
+  verifyNote:"Remember: ScamCheck can be wrong. Always verify using the organisation's official website, app or phone number – never the details in the message.",
+  learnTitle:"Learn to spot scams", learnLead:"Scammers use the same tricks again and again. Once you know them, they are easier to notice.",
+  quizTitle:"Practice quiz", quizLead:"Read each message. Would you trust it?",
+  trust:"Looks OK", suspicious:"Suspicious", correct:"Correct! ", notQuite:"Not quite. ", score:"Your score",
+  disclaimer:"ScamCheck is a helper, not a judge. AI can make mistakes. If you are unsure, check with the organisation using its official website, app or phone number, or ask someone you trust.",
+  lessons:[
+   {t:"Phishing: messages that fish for your details",b:"Phishing messages pretend to be from a company you know and ask you to 'confirm' or 'update' your details. Real companies rarely ask for passwords or full card numbers by message.",e:"“Your bank account is locked. Log in here to unlock it.”"},
+   {t:"Fake links",b:"A link can show one name but go somewhere else. Look for spelling tricks (paypa1.com), extra words (bank-secure-login.com), and short links (bit.ly). When unsure, don't tap: open the official app or type the website yourself.",e:"www.royal-bank-verify-account.info"},
+   {t:"Impersonation",b:"Scammers pretend to be your bank, the government, a delivery company, tech support, or even a family member with a 'new number'. If someone you know writes from a new number, call the old number to check.",e:"“Hi Mum, I lost my phone. This is my new number. Can you pay a bill for me?”"},
+   {t:"Urgency and fear",b:"Scammers want you to panic so you don't think. Watch for 'today only', 'last warning', 'your account will be closed', or threats of police or fines. Real organisations give you time.",e:"“Final notice! Pay within 2 hours or legal action will begin.”"},
+   {t:"Money, gift cards and codes",b:"Never share one-time codes (they unlock your accounts). Be very careful if anyone asks for gift cards, crypto, or bank transfers. Nobody legitimate asks you to pay fees to receive a prize.",e:"“You won £5,000! Pay a £50 fee in gift cards to claim.”"},
+   {t:"How to verify safely",b:"1) Don't click. 2) Open the official app or type the website yourself. 3) Call the number printed on your card or on the official website. 4) Ask a family member or friend. Taking a minute is always okay.",e:""}
+  ],
+  quiz:[
+   {m:"Your parcel could not be delivered. Pay a £1.99 fee now at: http://post-redelivery-uk.top/pay or it will be returned.",s:true,w:"The link is not an official post office address, the fee is small to lower your guard, and there is a deadline."},
+   {m:"Hi, it's your dentist's office. Reminder: appointment tomorrow at 10:30. Reply C to confirm or call us on the number on your last invoice.",s:false,w:"It asks for nothing risky and points you to a number you already have. (Still, you can phone the clinic if unsure.)"},
+   {m:"URGENT: We detected a login to your account from Russia. Reply with the 6-digit code we just sent you to cancel it.",s:true,w:"Anyone asking for a code sent to you is trying to break into your account. Never share it."},
+   {m:"Congratulations! You have been selected to receive a free iPhone 16. Just enter your card details to pay shipping.",s:true,w:"Unrealistic prize plus a request for card details. Real prizes don't ask for payment."},
+   {m:"Hi, this is Sam from the book club. Here's the link we talked about yesterday for the meeting notes: docs.google.com/document/d/…",s:false,w:"It's expected, from someone you know, and the link goes to a well-known site. If you didn't actually speak, check with Sam."}
+  ]
+},
+ar: {
+  skip:"انتقل إلى المحتوى", navCheck:"افحص رسالة", navLearn:"تعلّم",
+  heroTitle:"وصلتك رسالة غريبة؟ توقّف قليلاً أولاً.",
+  heroLead:"أرِنا الرسالة وسنشير إلى علامات التحذير ونشرحها بكلمات بسيطة.",
+  modeImage:"📷 ارفع لقطة شاشة", modeText:"📝 الصق النص", modeLink:"🔗 أدخل رابطاً",
+  dropText:"اضغط هنا لاختيار لقطة شاشة أو صورة", dropHint:"يمكنك أيضاً سحب الصورة وإفلاتها هنا",
+  remove:"إزالة", textPh:"الصق الرسالة هنا", linkPh:"الصق الرابط هنا (لا تفتحه)",
+  linkHint:"نحن لا نفتح الرابط أبداً. ننظر إلى عنوانه فقط.",
+  checkBtn:"افحص هذه الرسالة",
+  privacy:"🔒 الخصوصية: تُرسل رسالتك إلى خدمة ذكاء اصطناعي لتحليلها فقط. لا نحفظها ولا نخزّن شيئاً لدينا.",
+  loading:"نفحص بعناية… قد يستغرق ذلك بضع ثوانٍ.",
+  needInput:"من فضلك أضف لقطة شاشة أو نصاً أو رابطاً أولاً.",
+  netError:"تعذّر الفحص الآن. حاول مرة أخرى بعد قليل.",
+  risk_low:"قلق منخفض", risk_suspicious:"مشبوهة", risk_high:"خطر مرتفع",
+  whyBtn:"لماذا تم التنبيه؟", hideWhy:"إخفاء التفاصيل",
+  stepsTitle:"ما الذي يمكنك فعله الآن", noSigns:"لم نجد علامات تحذير واضحة. ومع ذلك، إذا طلبت الرسالة مالاً أو رموزاً أو كلمات مرور فتوقّف وتحقّق أولاً.",
+  signsTitle:"علامات التحذير التي لاحظناها", goodTitle:"أمور تبدو طبيعية",
+  yourMsg:"رسالتك مع تمييز علامات التحذير",
+  readAloud:"🔊 اقرأ بصوت عالٍ", stopRead:"⏹ إيقاف", again:"افحص رسالة أخرى", learnMore:"تعلّم عن الاحتيال",
+  verifyNote:"تذكّر: قد يخطئ ScamCheck. تحقّق دائماً عبر الموقع الرسمي أو التطبيق أو رقم الهاتف الرسمي للجهة، وليس عبر البيانات الموجودة في الرسالة.",
+  learnTitle:"تعلّم كيف تكتشف الاحتيال", learnLead:"يستخدم المحتالون الحيل نفسها مراراً. وعندما تعرفها يصبح اكتشافها أسهل.",
+  quizTitle:"اختبار تدريبي", quizLead:"اقرأ كل رسالة. هل تثق بها؟",
+  trust:"تبدو سليمة", suspicious:"مشبوهة", correct:"صحيح! ", notQuite:"ليس تماماً. ", score:"نتيجتك",
+  disclaimer:"ScamCheck مساعد وليس حَكَماً. قد يخطئ الذكاء الاصطناعي. إذا لم تكن متأكداً، تواصل مع الجهة عبر موقعها الرسمي أو تطبيقها أو رقمها الرسمي، أو اسأل شخصاً تثق به.",
+  lessons:[
+   {t:"التصيّد: رسائل تصطاد بياناتك",b:"تتظاهر رسائل التصيّد بأنها من شركة تعرفها وتطلب منك «تأكيد» بياناتك أو «تحديثها». نادراً ما تطلب الشركات الحقيقية كلمات المرور أو أرقام البطاقات كاملة عبر رسالة.",e:"«حسابك المصرفي مقفل. سجّل الدخول من هنا لفتحه.»"},
+   {t:"الروابط المزيّفة",b:"قد يظهر الرابط باسم ويذهب إلى مكان آخر. انتبه لأخطاء الإملاء (paypa1.com) والكلمات الزائدة (bank-secure-login.com) والروابط المختصرة. إذا شككت فلا تضغط: افتح التطبيق الرسمي أو اكتب عنوان الموقع بنفسك.",e:"www.royal-bank-verify-account.info"},
+   {t:"انتحال الهوية",b:"يتظاهر المحتالون بأنهم مصرفك أو جهة حكومية أو شركة توصيل أو دعم فني، أو حتى قريب لك يقول إن «رقمي الجديد». إذا راسلك شخص تعرفه من رقم جديد فاتصل برقمه القديم للتأكد.",e:"«مرحباً ماما، ضاع هاتفي. هذا رقمي الجديد. هل يمكنك دفع فاتورة عني؟»"},
+   {t:"الاستعجال والتخويف",b:"يريدك المحتال أن تذعر فلا تفكر. احذر عبارات مثل «اليوم فقط» و«تحذير أخير» و«سيُغلق حسابك» أو التهديد بالشرطة والغرامات. الجهات الحقيقية تمنحك وقتاً.",e:"«إشعار أخير! ادفع خلال ساعتين وإلا بدأ الإجراء القانوني.»"},
+   {t:"المال وبطاقات الهدايا والرموز",b:"لا تشارك رموز التحقق أبداً فهي تفتح حساباتك. احذر جداً إذا طُلب منك بطاقات هدايا أو عملات رقمية أو تحويلاً مصرفياً. لا أحد شرعي يطلب رسوماً مقابل جائزة.",e:"«ربحت 5000! ادفع رسوماً 50 ببطاقات هدايا لتستلمها.»"},
+   {t:"كيف تتحقق بأمان",b:"1) لا تضغط. 2) افتح التطبيق الرسمي أو اكتب الموقع بنفسك. 3) اتصل بالرقم المطبوع على بطاقتك أو في الموقع الرسمي. 4) اسأل قريباً أو صديقاً. من حقك دائماً أن تأخذ دقيقة للتفكير.",e:""}
+  ],
+  quiz:[
+   {m:"تعذّر تسليم طردك. ادفع رسوم 1.99 الآن عبر: http://post-redelivery-uk.top/pay وإلا سيُعاد.",s:true,w:"الرابط ليس عنواناً رسمياً للبريد، والرسوم صغيرة لتخفيف حذرك، وهناك مهلة قصيرة."},
+   {m:"مرحباً، هنا عيادة أسنانك. تذكير: موعدك غداً الساعة 10:30. رُدّ بحرف C للتأكيد أو اتصل بالرقم الموجود في آخر فاتورة.",s:false,w:"لا تطلب شيئاً خطيراً وتوجّهك إلى رقم تملكه أصلاً. (ويمكنك الاتصال بالعيادة إن شككت.)"},
+   {m:"عاجل: رصدنا تسجيل دخول إلى حسابك من روسيا. أرسل الرمز المكوّن من 6 أرقام الذي وصلك لإلغائه.",s:true,w:"من يطلب رمزاً وصلك يحاول اختراق حسابك. لا تشاركه أبداً."},
+   {m:"مبروك! تم اختيارك للحصول على آيفون 16 مجاناً. أدخل بيانات بطاقتك فقط لدفع الشحن.",s:true,w:"جائزة غير واقعية مع طلب بيانات البطاقة. الجوائز الحقيقية لا تطلب دفعاً."},
+   {m:"مرحباً، أنا سام من نادي الكتاب. هذا الرابط الذي تحدثنا عنه أمس لملاحظات الاجتماع: docs.google.com/document/d/…",s:false,w:"متوقعة وممن تعرفه والرابط لموقع معروف. وإن لم تتحدثا فعلاً فاسأل سام."}
+  ]
+}
+};

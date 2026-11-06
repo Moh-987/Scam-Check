@@ -1,0 +1,8 @@
+{
+  "name": "scamcheck",
+  "version": "1.0.0",
+  "private": true,
+  "description": "ScamCheck: helps people spot warning signs of online scams.",
+  "scripts": { "dev": "vercel dev" },
+  "engines": { "node": ">=18" }
+}
