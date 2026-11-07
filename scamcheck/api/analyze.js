@@ -94,7 +94,7 @@ module.exports = async function handler(req, res) {
     });
 
     if (!r.ok) {
-      console.error("Anthropic API status", r.status); // status only; never log message content
+      const detail = (await r.text()).slice(0, 400); console.error("Anthropic API status", r.status, detail); return res.status(502).json({ error: "The analysis service had a problem. Please try again.", detail });
       return res.status(502).json({ error: "The analysis service had a problem. Please try again." });
     }
     const data = await r.json();
