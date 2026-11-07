@@ -86,9 +86,9 @@ module.exports = async function handler(req, res) {
       body: JSON.stringify({
         model: MODEL,
         max_tokens: 2000,
-        system: SYSTEM,
+system: SYSTEM + "\n\nAlways reply by calling the report_analysis tool.",
         tools: [TOOL],
-        tool_choice: { type: "tool", name: "report_analysis" },
+tool_choice: { type: "auto" },
         messages: [{ role: "user", content }]
       })
     });
